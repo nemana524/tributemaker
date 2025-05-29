@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["python311", "ffmpeg", "imagemagick"]
-
-[phases.build]
-cmds = ["mkdir -p uploads/images uploads/videos uploads/music assets/music"]
-
-[start]
-cmd = "gunicorn --bind 0.0.0.0:$PORT app:app --workers 2 --timeout 120 --preload" 
