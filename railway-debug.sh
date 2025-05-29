@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "=== Railway Build Debug ==="
+echo "Current directory: $(pwd)"
+echo "Files in current directory:"
+ls -la
+echo ""
+echo "Dockerfile exists: $(test -f Dockerfile && echo 'YES' || echo 'NO')"
+echo "railway.toml exists: $(test -f .railway/railway.toml && echo 'YES' || echo 'NO')"
+echo "nixpacks.toml exists: $(test -f nixpacks.toml && echo 'YES' || echo 'NO')"
+echo ""
+echo "Environment variables:"
+env | grep -i railway || echo "No Railway env vars found"
+env | grep -i nixpacks || echo "No Nixpacks env vars found"
+echo ""
+echo "Dockerfile content:"
+cat Dockerfile 2>/dev/null || echo "Dockerfile not found"
+echo ""
+echo "=== End Debug ===" 
