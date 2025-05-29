@@ -1,0 +1,37 @@
+# TributeMaker Requirements - Railway Deployment Ready
+# Core Flask dependencies
+Flask>=3.0.0
+Flask-CORS>=4.0.0
+Flask-JWT-Extended>=4.6.0
+Flask-SQLAlchemy>=3.0.0
+Jinja2>=3.1.0
+MarkupSafe>=2.1.0
+Werkzeug>=3.0.0
+
+# Database dependencies
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Security and authentication
+PyJWT>=2.8.0
+cryptography>=41.0.0
+email-validator>=2.0.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Utilities and environment
+python-dotenv>=1.0.0
+typing-extensions>=4.8.0
+blinker>=1.6.0
+click>=8.1.0
+itsdangerous>=2.1.0
+
+# Production server
+gunicorn>=21.0.0
+
+# Email functionality
+requests>=2.31.0
+
+# Additional production dependencies
+setuptools>=68.0.0
